@@ -1,0 +1,23 @@
+html,
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#Titre {
+    width: 33vh;
+    padding: 3vh;
+    font-size: 2em;
+}
+
+#Canvas {
+    border: solid black 4px;
+}
+
+#ContainerCanvas {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 700px;
+}
