@@ -3,21 +3,26 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    font-family: monospace;
 }
 
 #Titre {
     width: 33vh;
     padding: 3vh;
     font-size: 2em;
+    position: absolute;
+    color: hsl(0 0% 30% / 1);
 }
 
 #Canvas {
-    border: solid black 4px;
+    border: solid hsl(0 0% 30% / 1);
+    /* width: auto; */
 }
 
 #ContainerCanvas {
+    top: 10vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 700px;
+    width: min-content;
 }

@@ -33,10 +33,12 @@ function setup() {
     ctx.beginPath();
 
     // 2. Paramétrages annexes
-    ctx.fillStyle = «red»;
+    ctx.fillStyle = "red";
 
     // 3. Tracé d’ une forme
-    ctx.fillRect(Largeur_du_canvas / 2, Hauteur_du_canvas / 2, 50, 50);
+    var LargeurCarre = 50;
+    var HauteurCarre = 50;
+    ctx.fillRect(Largeur_du_canvas / 2, Hauteur_du_canvas / 2, LargeurCarre, HauteurCarre);
 
     // 4. Fin du tracé
     ctx.closePath();
