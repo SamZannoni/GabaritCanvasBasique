@@ -51,4 +51,18 @@ function setup() {
     // var Carre1 = new Carre(Largeur_du_canvas / 2, Hauteur_du_canvas / 2, 50, 50, "red");
     // Carre1.draw();
 
+    // 5 _ Sauvegarder l'image
+    var Images = document.getElementById("imgCanvas");
+
+    Images.src = Canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+
+    var ClickDownload = document.getElementById("ClickDownload");
+    ClickDownload.addEventListener("click", saveImg);
+
+    function saveImg() {
+        var SourceImg = Images.getAttribute('src');
+        ClickDownload.href = SourceImg;
+    }
+
+
 }

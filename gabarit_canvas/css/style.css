@@ -6,10 +6,14 @@ body {
     font-family: monospace;
 }
 
+a {
+    text-decoration: none;
+}
+
 #Titre {
     width: 33vh;
     padding: 3vh;
-    font-size: 2em;
+    font-size: 20px;
     position: absolute;
     color: hsl(0 0% 30% / 1);
 }
@@ -25,4 +29,29 @@ body {
     margin-right: auto;
     position: relative;
     width: min-content;
+}
+
+#ClickDownload {
+    margin: 3vh;
+    padding: 10px;
+    margin-bottom: 0vh;
+    font-family: monospace;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    top: 0;
+    right: 0vw;
+    transition: all ease 500ms;
+    background-color: white;
+    color: hsl(0 0% 30% / 1);
+    border: solid black 2px;
+}
+
+#ClickDownload:hover {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#imgCanvas {
+    display: none;
 }
